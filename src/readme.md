@@ -69,3 +69,15 @@ response :
 
  express 위에서 돌아가면서 동시에
  Fastify위에서도 돌아간다. (Express 처럼 작동하는데 빠른 프레임워크)
+
+ # 테스팅
+ .spec.ts는 테스트를 포함한 파일임
+
+jest --watch
+모든 테스팅 파일을 탐색하여 관찰함
+
+jest --coverage 
+코드가 얼마나 테스팅 됐는지 또는 안됐는지 알려줌
+
+유닛 테스팅 - function 하나하나만 테스트
+end to end - 전체 시스템 테스트
