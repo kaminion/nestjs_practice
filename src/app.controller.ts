@@ -1,10 +1,17 @@
-import { Controller, Get } from '@nestjs/common';
+import { Controller, Get, Render, Res } from '@nestjs/common';
+
 
 @Controller('')
 export class AppController {
     @Get()
     home(){
-        return "Welcome to my Movie API";
+
+        let renderProps = {
+            script : '/build/client.bundle.js'
+        }
+
+        
+            
     }
 
 }
